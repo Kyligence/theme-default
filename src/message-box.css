@@ -34,7 +34,8 @@
 
     @e header {
       position: relative;
-      padding: 20px 20px 0;
+      padding: 15px 20px;
+      border-bottom: 1px solid #cccccc;
     }
 
     @e headerbtn {
@@ -48,12 +49,13 @@
       cursor: pointer;
 
       .el-message-box__close {
-        color: #999;
+        color: var(--dialog-close-color);
+        font-size: 12px;
       }
       
       &:focus, &:hover {
         .el-message-box__close {
-          color: var(--color-primary);
+          color: var(--dialog-close-hover-color);
         }
       }
 
@@ -87,9 +89,9 @@
       padding-left: 0;
       margin-bottom: 0;
       font-size: var(--msgbox-font-size);
-      font-weight: bold;
+      font-weight: 500;
       height: 18px;
-      color: #333;
+      color: var(--color-base-black);
     }
 
     @e message {
@@ -102,7 +104,7 @@
     }
 
     @e btns {
-      padding: 10px 20px 15px;
+      padding: 20px;
       text-align: right;
 
       & button:nth-child(2) {
@@ -116,9 +118,9 @@
 
     @e status {
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 36px !important;
+      top: 30px;
+      font-size: 14px !important;
+      line-height: 20px;
 
       &.el-icon-circle-check {
         color: var(--msgbox-success-color);
