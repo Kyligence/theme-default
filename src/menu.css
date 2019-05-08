@@ -2,8 +2,8 @@
 @import "./common/var.css";
 
 @define-extend menu-item {
-  height: 56px;
-  line-height: 56px;
+  height: 46px;
+  line-height: 46px;
   font-size: 14px;
   color: var(--menu-item-color);
   padding: 0 20px;
@@ -22,6 +22,7 @@
     margin: 0;
     padding-left: 0;
     background-color: var(--menu-item-fill);
+    box-shadow: var(--menu-box-shadow);
     @utils-clearfix;
 
     & li {
@@ -30,6 +31,7 @@
 
     @m dark {
       background-color: var(--dark-menu-item-fill);
+      box-shadow: var(--dark-menu-box-shadow);
 
       & .el-menu-item,
       & .el-submenu__title {
@@ -51,8 +53,8 @@
     @m horizontal {
       & .el-menu-item {
         float: left;
-        height: 60px;
-        line-height: 60px;
+        height: 52px;
+        line-height: 52px;
         margin: 0;
         cursor: pointer;
         position: relative;
@@ -85,8 +87,8 @@
         }
 
         & .el-submenu__title {
-          height: 60px;
-          line-height: 60px;
+          height: 52px;
+          line-height: 52px;
           border-bottom: 5px solid transparent;
         }
 
@@ -224,8 +226,8 @@
       background-color: var(--color-light-gray);
     }
     & .el-menu-item {
-      height: 50px;
-      line-height: 50px;
+      height: 46px;
+      line-height: 46px;
       padding: 0 45px;
       min-width: 200px;
 

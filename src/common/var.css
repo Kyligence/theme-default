@@ -30,7 +30,8 @@
   --color-black: #000;
 
   --color-base-black: color(var(--color-primary) h(+6) s(33%) l(18%));
-  --color-light-black: color(var(--color-base-black) h(+5) s(27%) l(27%));
+  /* --color-light-black: color(var(--color-base-black) h(+5) s(27%) l(27%)); */
+  --color-light-black: #102d41;
   --color-extra-light-black: color(var(--color-base-black) h(+2) s(19%) l(35%));
 
   --color-base-silver: color(var(--color-base-black) h(+3) s(16%) l(58%));
@@ -535,12 +536,15 @@
   /* Menu
   --------------------------*/
   --menu-item-color: var(--link-color);
-  --menu-item-fill: var(--color-extra-light-gray);
+  /* --menu-item-fill: var(--color-extra-light-gray); */
+  --menu-item-fill: var(--color-white);
   --menu-item-hover-fill: var(--disabled-border-base);
+  --menu-box-shadow: 0 2px 4px 0 #e5e5e5;
 
   --dark-menu-item-color: var(--link-color);
   --dark-menu-item-fill: var(--color-light-black);
   --dark-menu-item-hover-fill: var(--link-color);
+  --dark-menu-box-shadow: none;
 
   /* Rate
   --------------------------*/
