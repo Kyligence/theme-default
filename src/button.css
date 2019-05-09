@@ -137,12 +137,15 @@
       border: none;
       color: var(--color-primary);
       background: transparent;
-      padding-left: 0;
-      padding-right: 0;
+      padding: 0;
 
       &:hover,
       &:focus {
         color: tint(var(--color-primary), var(--button-hover-tint-percent));
+        text-decoration: underline;
+        &.is-disabled {
+          text-decoration: none;
+        }
       }
       &:active {
         color: shade(var(--color-primary), var(--button-active-shade-percent));

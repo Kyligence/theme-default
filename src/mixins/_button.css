@@ -25,20 +25,25 @@
 
   &.is-plain {
     background: var(--button-default-fill);
-    border: var(--border-base);
-    color: var(--button-default-color);
+    border-color: $border-color;
+    color: $border-color;
 
-    &:hover,
     &:focus {
-      background: var(--color-white);
+      background: var(--button-default-fill);
       border-color: $border-color;
-      color: $background-color;
+      color: $border-color;
+    }
+
+    &:hover {
+      background: $background-color;
+      border-color: $border-color;
+      color: var(--color-white);
     }
     
     &:active {
-      background: var(--color-white);
+      background: shade($background-color, var(--button-active-shade-percent));;
       border-color: shade($border-color, var(--button-active-shade-percent));
-      color: shade($background-color, var(--button-active-shade-percent));
+      color: var(--color-white);
       outline: none;
     }
   }
@@ -48,4 +53,11 @@
   padding: $padding-vertical $padding-horizontal;
   font-size: $font-size;
   border-radius: $border-radius;
+  &.is-square {
+    padding: $padding-vertical;
+  }
+  &.is-circle {
+    padding: $padding-vertical;
+    border-radius: 50%;
+  }
 }
