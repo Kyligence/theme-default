@@ -47,7 +47,7 @@
   --border-color-base: var(--color-extra-light-silver);
   --border-color-hover: var(--color-base-silver);
   --border-base: var(--border-width-base) var(--border-style-base) var(--border-color-base);
-  --border-radius-base: 4px;
+  --border-radius-base: 2px;
   --border-radius-small: 2px;
   --border-radius-circle: 100%;
 
@@ -333,16 +333,16 @@
   -------------------------- */
   --button-font-size: 14px;
   --button-border-radius: var(--border-radius-base);
-  --button-padding-vertical: 10px;
-  --button-padding-horizontal: 15px;
+  --button-padding-vertical: 7px;
+  --button-padding-horizontal: 10px;
 
   --button-large-font-size: 16px;
   --button-large-padding-vertical: 11px;
   --button-large-padding-horizontal: 19px;
 
   --button-small-font-size: 12px;
-  --button-small-padding-vertical: 7px;
-  --button-small-padding-horizontal: 9px;
+  --button-small-padding-vertical: 5px;
+  --button-small-padding-horizontal: 8px;
 
   --button-mini-font-size: 12px;
   --button-mini-padding-vertical: 4px;
