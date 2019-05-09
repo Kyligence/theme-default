@@ -18,10 +18,10 @@
     overflow: hidden;
 
     @e group {
-      margin-left: 38px;
+      margin-left: 20px;
       position: relative;
-      height: 20px;
-      line-height: 20px;
+      height: 18px;
+      line-height: 18px;
       display: flex;
       align-items: center;
 
@@ -30,19 +30,20 @@
       }
 
       & p {
-        font-size: var(--font-size-base);
+        font-size: var(--message-content-font-size);
         margin: 0 34px 0 0;
         white-space: nowrap;
-        color: var(--message-content-color);
+        color: var(--font-color-grey);
         text-align: justify;
       }
+      
     }
 
     @e img {
-      size: 40px;
+      size: 16px;
       position: absolute;
-      left: 0;
-      top: 0;
+      left: 10px;
+      top: 10px;
     }
 
     @e icon {
@@ -54,7 +55,7 @@
       position: absolute 3px 0 * *;
       cursor: pointer;
       color: var(--message-close-color);
-      font-size: var(--font-size-base);
+      font-size: var(--message-content-font-size);
 
       &:hover {
         color: var(--message-close-hover-color);
@@ -78,9 +79,50 @@
     }
   }
 
+  .success {
+    background: var(--color-success-background);
+
+    & .el-message__closeBtn {
+      color: var(--color-success);
+    }
+  }
+
+  .warning {
+    background: var(--color-warning-background);
+
+    & .el-message__closeBtn {
+      color: var(--color-warning);
+    }
+  }
+
+  .error {
+    background: var(--color-danger-background);
+
+    & .el-message__closeBtn {
+      color: var(--color-danger);
+    }
+  }
+
+  .info {
+    background: var(--color-info-background);
+
+    & .el-message__closeBtn {
+      color: var(--color-primary);
+    }
+  }
+
+  .normal {
+    background: var(--color-normal-background);
+
+    & .el-message__closeBtn {
+      color: var(--color-info);
+    }
+  }
+
   .el-message-fade-enter,
   .el-message-fade-leave-active {
     opacity: 0;
     transform: translate(-50%, -100%);
   }
+
 }

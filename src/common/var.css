@@ -18,6 +18,12 @@
   --color-danger: #e73371;
   --color-info: #7f7f7f;
 
+  --color-success-background: #eaffea;
+  --color-warning-background: #fff6e0;
+  --color-danger-background: #ffe7ef;
+  --color-info-background: #e6f3fc;
+  --color-normal-background: #f4f4f4;
+
   --color-secondary: color(var(--color-primary) s(99%) l(*0.9));
   --color-white: #fff;
   --color-dark-white: color(var(--color-white) blend(var(--color-primary) 2%));
@@ -64,6 +70,7 @@
   -------------------------- */
   --font-size-base: 14px;
   --font-color-base: var(--color-base-black);
+  --font-color-grey: #191919;
   --font-color-disabled-base: #bbb;
 
   /* Size
@@ -219,6 +226,7 @@
 
   /* Message
   -------------------------- */
+  --message-content-font-size: 12px;
   --message-shadow: var(--box-shadow-base);
   --message-min-width: 300px;
   --message-padding: 10px 12px;
