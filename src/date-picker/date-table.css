@@ -30,10 +30,14 @@
         color: var(--datepicker-off-color);
       }
 
+      &:hover {
+        color: var(--datepicker-text-hover-color);
+      }
+
       &.today {
         color: var(--datepicker-text-hover-color);
         position: relative;
-        &:before {
+        /* &:before {
           content: " ";
           position: absolute;
           top: 0px;
@@ -42,25 +46,59 @@
           height: 0;
           border-top: 0.5em solid var(--datepicker-active-color);
           border-left: .5em solid transparent;
-        }
+        } */
       }
 
-      &.available:hover {
-        background-color: var(--datepicker-cell-hover-color);
-      }
-
-      &.in-range {
+      &.in-range div {
+        display: inline-block;
+        line-height: 16px;
+        width: 100%;
         background-color: var(--datepicker-inrange-color);
         &:hover {
           background-color: var(--datepicker-inrange-hover-color);
         }
       }
 
-      &.current:not(.disabled),
+      &.current:not(.disabled) {
+
+        & span {
+          color: var(--color-white);
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          line-height: 16px;
+          background-color: var(--color-primary);
+        }
+      }
       &.start-date,
       &.end-date {
-        background-color: var(--datepicker-active-color) !important;
-        color: var(--color-white);
+
+        & div {
+          color: var(--color-white);
+          background: linear-gradient(to right, #fff 50%, var(--datepicker-inrange-color) 50%);
+        }
+
+        & span {
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          line-height: 16px;
+          background-color: var(--color-primary);
+        }
+      }
+
+      &.end-date {
+        & div {
+          background: linear-gradient(to left, #fff 50%, var(--datepicker-inrange-color) 50%);
+        }
+      }
+
+      &.end-date.start-date {
+        & div {
+          background: none;
+        }
       }
 
       &.disabled {
