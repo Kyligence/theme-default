@@ -24,6 +24,9 @@
   --color-info-background: #e6f3fc;
   --color-normal-background: #f4f4f4;
 
+  --color-base-header: #CDE7F8;
+  --color-base-border: #CCC;
+
   --color-secondary: color(var(--color-primary) s(99%) l(*0.9));
   --color-white: #fff;
   --color-dark-white: color(var(--color-white) blend(var(--color-primary) 2%));
@@ -357,7 +360,7 @@
   --button-mini-padding-vertical: 4px;
   --button-mini-padding-horizontal: 4px;
 
-  --button-default-color: var(--color-base-black);
+  --button-default-color: #7F7F7F;
   --button-default-fill: var(--color-white);
   --button-default-border: #c4c4c4;
 
@@ -605,14 +608,14 @@
 
   /* Transfer
   --------------------------*/
-  --transfer-border-color: var(--color-base-gray);
+  --transfer-border-color: var(--color-base-border);
   --transfer-box-shadow: var(--box-shadow-base);
   --transfer-panel-width: 200px;
   --transfer-panel-header-height: 36px;
-  --transfer-panel-header-background: var(--color-dark-white);
+  --transfer-panel-header-background: var(--color-base-header);
   --transfer-panel-footer-height: 36px;
   --transfer-panel-body-height: 246px;
-  --transfer-item-height: 32px;
+  --transfer-item-height: 30px;
   --transfer-item-hover-background: var(--color-light-gray);
-  --transfer-filter-height: 22px;
+  --transfer-filter-height: 24px;
 }
