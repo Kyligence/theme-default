@@ -54,7 +54,7 @@
   -------------------------- */
   --border-width-base: 1px;
   --border-style-base: solid;
-  --border-color-base: var(--color-extra-light-silver);
+  --border-color-base: #CCCCCC;
   --border-color-hover: var(--color-base-silver);
   --border-base: var(--border-width-base) var(--border-style-base) var(--border-color-base);
   --border-radius-base: 2px;
@@ -362,7 +362,7 @@
 
   --button-default-color: #7F7F7F;
   --button-default-fill: var(--color-white);
-  --button-default-border: #CCCCCC;
+  --button-default-border: var(--border-color-base);
 
   --button-ghost-color: #666;
   --button-ghost-fill: transparent;
@@ -428,9 +428,11 @@
 
   /* Table
  -------------------------- */
-  --table-border-color: color(var(--border-color-base) h(-3) s(27%) l(90%));
-  --table-text-color: var(--color-base-black);
-  --table-header-background: var(--color-extra-light-gray);
+  --table-border-color: var(--border-color-base);
+  --table-text-color: #191919;
+  --table-header-text-color: #323232;
+  --table-header-background: #CDE7F8;
+  --table-row-hover-background: #E6F3FB;
   --table-footer-background: var(--color-dark-white);
 
   /* Pagination

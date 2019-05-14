@@ -112,7 +112,7 @@
     }
 
     & th, td {
-      height: 40px;
+      height: 36px;
       min-width: 0;
       box-sizing: border-box;
       text-overflow: ellipsis;
@@ -161,8 +161,8 @@
 
     & th > div {
       display: inline-block;
-      padding-left: 18px;
-      padding-right: 18px;
+      padding-left: 10px;
+      padding-right: 10px;
       line-height: 40px;
       box-sizing: border-box;
       overflow: hidden;
@@ -224,7 +224,7 @@
 
       & thead div {
         background-color: var(--table-header-background);
-        color: var(--table-text-color);
+        color: var(--table-header-text-color);
       }
     }
 
@@ -269,7 +269,7 @@
 
       & thead div {
         background-color: var(--table-header-background);
-        color: var(--table-text-color);
+        color: var(--table-header-text-color);
       }
 
       & tbody td {
@@ -380,8 +380,8 @@
       white-space: normal;
       word-break: break-all;
       line-height: 24px;
-      padding-left: 18px;
-      padding-right: 18px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
 
     & tr input[type="checkbox"] {
@@ -412,7 +412,7 @@
         &, &.el-table__row--striped {
           &, &.current-row {
             > td {
-              background-color: var(--color-extra-light-gray);
+              background-color: var(--table-row-hover-background);
             }
           }
         }
@@ -458,7 +458,7 @@
 
     @modifier enable-row-hover {
       .el-table__body tr:hover > td {
-        background-color: var(--color-extra-light-gray);
+        background-color: var(--table-row-hover-background);
         background-clip: padding-box;
       }
     }
