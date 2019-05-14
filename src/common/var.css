@@ -362,7 +362,7 @@
 
   --button-default-color: #7F7F7F;
   --button-default-fill: var(--color-white);
-  --button-default-border: #c4c4c4;
+  --button-default-border: #CCCCCC;
 
   --button-ghost-color: #666;
   --button-ghost-fill: transparent;
