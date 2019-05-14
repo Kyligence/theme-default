@@ -20,12 +20,22 @@
       box-sizing: border-box;
     }
 
+    .el-pager {
+      font-weight: var(--pagination-font-weight);
+    }
+
+    .el-icon-d-arrow-left:before,
+    .el-icon-d-arrow-right:before {
+      position: relative;
+      top: -2.5px;
+    }
+
     .el-select .el-input {
-      width: 110px;
+      width: 95px;
       input {
         padding-right: 25px;
         border-radius: var(--border-radius-small);
-        height: 28px;
+        height: 24px;
       }
     }
 
@@ -124,14 +134,15 @@
     @e editor {
       border: 1px solid var(--pagination-border-color);
       border-radius: var(--pagination-border-radius);
-      line-height: 18px;
-      padding: 4px 2px;
+      line-height: 1;
+      padding: 3.5px 2px;
       width: 30px;
       text-align: center;
       margin: 0 6px;
       box-sizing: border-box;
       transition: border .3s;
       -moz-appearance: textfield;
+      font-weight: var(--pagination-font-weight);
 
       &::-webkit-inner-spin-button,
       &::-webkit-outer-spin-button {

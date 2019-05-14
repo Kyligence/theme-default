@@ -41,7 +41,7 @@
 
     @e icon {
       position: absolute;
-      width: 35px;
+      width: 30px;
       height: 100%;
       right: 0;
       top: 0;
@@ -104,6 +104,8 @@
 
       & .el-input__inner {
         height: var(--input-small-height);
+        padding-left: 8px;
+        padding-right: 8px;
       }
     }
     @m mini {
