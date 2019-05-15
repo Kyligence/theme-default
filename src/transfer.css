@@ -112,8 +112,8 @@
         box-sizing: border-box;
       }
 
-      .el-input__icon {
-        right: 10px;
+      .el-input__suffix.el-input__icon {
+        right: 20px;
       }
 
       .el-icon-circle-close {

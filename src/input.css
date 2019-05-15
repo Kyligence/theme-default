@@ -8,6 +8,24 @@
     display: inline-block;
     width: 100%;
 
+    &.el-input--prefix {
+      .el-input__prefix {
+        left: 10px;
+      }
+      .el-input__inner {
+        padding-left: 30px;
+      }
+    }
+
+    &.el-input--suffix {
+      .el-input__suffix {
+        right: 10px;
+      }
+      .el-input__inner {
+        padding-right: 35px;
+      }
+    }
+
     @e inner {
       appearance: none;
       background-color: var(--input-fill);
@@ -41,9 +59,7 @@
 
     @e icon {
       position: absolute;
-      width: 30px;
       height: 100%;
-      right: 0;
       top: 0;
       text-align: center;
       color: var(--input-icon-color);
@@ -57,18 +73,10 @@
         vertical-align: middle;
       }
 
-      & + .el-input__inner {
-        padding-right: 35px;
-      }
-
       @when clickable {
         &:hover {
           cursor: pointer;
           color: var(--input-hover-border);
-
-          & + .el-input__inner {
-            border-color: var(--input-hover-border);
-          }
         }
       }
     }
