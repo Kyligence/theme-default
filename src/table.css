@@ -334,13 +334,13 @@
         top: 10.5px;
         border-top: none;
         border-right: 3px solid transparent;
-        border-bottom: 4px solid var(--color-light-silver);
+        border-bottom: 4px solid #7F7F7F;
         border-left: 3px solid transparent;
       }
 
       &.descending {
         bottom: 10.5px;
-        border-top: 4px solid var(--color-light-silver);
+        border-top: 4px solid #7F7F7F;
         border-right: 3px solid transparent;
         border-bottom: none;
         border-left: 3px solid transparent;
@@ -348,11 +348,11 @@
     }
 
     & .ascending .sort-caret.ascending {
-      border-bottom-color: #7F7F7F;
+      border-bottom-color: var(--color-primary);
     }
 
     & .descending .sort-caret.descending {
-      border-top-color: #7F7F7F;
+      border-top-color: var(--color-primary);
     }
 
     & th.gutter, td.gutter {
