@@ -8,6 +8,21 @@
     @m selection .cell {
       padding-left: 5px;
       padding-right: 5px;
+      height: 30px;
+      position: relative;
+      & .el-checkbox {
+        line-height: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        & .el-checkbox__label {
+          display: none;
+        }
+        & .el-checkbox__inner {
+          display: block;
+        }
+      }
     }
   }
 
