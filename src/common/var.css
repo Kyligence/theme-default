@@ -23,6 +23,7 @@
   --color-danger-background: #FFE7EF;
   --color-info-background: #E6F3FC;
   --color-normal-background: #F4F4F4;
+  --color-header-dark-background: #102D41;
 
   --color-base-header: #CDE7F8;
   --color-base-border: #CCC;
@@ -551,7 +552,7 @@
   --menu-box-shadow: 0 2px 4px 0 #e5e5e5;
 
   --dark-menu-item-color: var(--link-color);
-  --dark-menu-item-fill: var(--color-light-black);
+  --dark-menu-item-fill: var(--color-header-dark-background);
   --dark-menu-item-hover-fill: var(--link-color);
   --dark-menu-box-shadow: none;
 

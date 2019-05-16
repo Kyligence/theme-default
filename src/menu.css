@@ -53,8 +53,8 @@
     @m horizontal {
       & .el-menu-item {
         float: left;
-        height: 52px;
-        line-height: 52px;
+        height: 60px;
+        line-height: 60px;
         margin: 0;
         cursor: pointer;
         position: relative;
@@ -87,8 +87,8 @@
         }
 
         & .el-submenu__title {
-          height: 52px;
-          line-height: 52px;
+          height: 60px;
+          line-height: 60px;
           border-bottom: 5px solid transparent;
         }
 
