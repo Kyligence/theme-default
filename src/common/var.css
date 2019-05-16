@@ -11,18 +11,18 @@
 
   /* Colors
   -------------------------- */
-  --color-primary: #0988de;
+  --color-primary: #0988DE;
 
-  --color-success: #4cb050;
-  --color-warning: #f7ba2a;
-  --color-danger: #e73371;
-  --color-info: #7f7f7f;
+  --color-success: #4CB050;
+  --color-warning: #F7BA2A;
+  --color-danger: #E73371;
+  --color-info: #7F7F7F;
 
-  --color-success-background: #eaffea;
-  --color-warning-background: #fff6e0;
-  --color-danger-background: #ffe7ef;
-  --color-info-background: #e6f3fc;
-  --color-normal-background: #f4f4f4;
+  --color-success-background: #EAFFEA;
+  --color-warning-background: #FFF6E0;
+  --color-danger-background: #FFE7EF;
+  --color-info-background: #E6F3FC;
+  --color-normal-background: #F4F4F4;
 
   --color-base-header: #CDE7F8;
   --color-base-border: #CCC;
@@ -206,10 +206,12 @@
   --alert-close-font-size: 12px;
   --alert-close-customed-font-size: 13px;
 
-  --alert-success-color: var(--color-success);
-  --alert-info-color: var(--color-info);
-  --alert-warning-color: var(--color-warning);
-  --alert-danger-color: var(--color-danger);
+  --alert-text-color: var(--font-color-grey);
+  --alert-notice-color: var(--color-info-background);
+  --alert-success-color: var(--color-success-background);
+  --alert-info-color: var(--color-normal-background);
+  --alert-warning-color: var(--color-warning-background);
+  --alert-danger-color: var(--color-danger-background);
 
   --alert-icon-size: 16px;
   --alert-icon-large-size: 28px;
@@ -429,7 +431,7 @@
   /* Table
  -------------------------- */
   --table-border-color: var(--border-color-base);
-  --table-text-color: #191919;
+  --table-text-color: var(--font-color-grey);
   --table-header-text-color: #323232;
   --table-header-background: #CDE7F8;
   --table-row-hover-background: #E6F3FB;
@@ -441,7 +443,7 @@
   --pagination-font-weight: 500;
   --pagination-fill: var(--color-white);
   /* --pagination-color: var(--link-color); */
-  --pagination-color: #191919;
+  --pagination-color: var(--font-color-grey);
   --pagination-border-radius: 2px;
   --pagination-button-color: var(--color-light-silver);
   --pagination-button-size: 24px;

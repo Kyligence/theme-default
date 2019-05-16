@@ -10,27 +10,51 @@
     box-sizing: border-box;
     border-radius: var(--alert-border-radius);
     position: relative;
-    background-color: var(--color-white);
+    background-color: var(--alert-info-color);
     overflow: hidden;
-    color: var(--color-white);
+    color: var(--alert-text-color);
     opacity: 1;
     display: table;
     transition: opacity .2s;
 
     @modifier success {
       background-color: var(--alert-success-color);
+      .el-alert__closebtn,
+      .el-alert__icon {
+        color: var(--color-success);
+      }
     }
 
     @modifier info {
       background-color: var(--alert-info-color);
+      .el-alert__closebtn,
+      .el-alert__icon {
+        color: var(--color-info);
+      }
     }
 
     @modifier warning {
       background-color: var(--alert-warning-color);
+      .el-alert__closebtn,
+      .el-alert__icon {
+        color: var(--color-warning);
+      }
     }
 
     @modifier error {
       background-color: var(--alert-danger-color);
+      .el-alert__closebtn,
+      .el-alert__icon {
+        color: var(--color-danger);
+      }
+    }
+
+    @modifier notice {
+      background-color: var(--alert-notice-color);
+      .el-alert__closebtn,
+      .el-alert__icon {
+        color: var(--color-primary);
+      }
     }
 
     @e content {
@@ -42,11 +66,12 @@
       font-size: var(--alert-icon-size);
       width: var(--alert-icon-size);
       display: table-cell;
-      color: var(--color-white);
-      vertical-align: middle;
+      color: var(--alert-text-color);
+      position: relative;
+      top: 1px;
       @when big {
-        font-size: var(--alert-icon-large-size);
-        width: var(--alert-icon-large-size);
+        font-size: var(--alert-icon-size);
+        width: var(--alert-icon-size);
       }
     }
 
@@ -59,14 +84,14 @@
     }
 
     & .el-alert__description {
-      color: var(--color-white);
+      color: var(--alert-text-color);
       font-size: var(--alert-description-font-size);
       margin: 5px 0 0 0;
     }
 
     @e closebtn {
       font-size: var(--alert-close-font-size);
-      color: var(--color-white);
+      color: var(--alert-text-color);
       opacity: 1;
       position: absolute 12px 15px * *;
       cursor: pointer;
