@@ -74,14 +74,14 @@
       float: left;
     }
     @e item {
-      padding: 0 16px;
-      height: 42px;
+      padding: 0 10px;
+      height: 30px;
       box-sizing: border-box;
       line-height: @height;
       display: inline-block;
       list-style: none;
       font-size: 14px;
-      color: var(--color-base-silver);
+      color: #323232;
       position: relative;
 
       & .el-icon-close {
@@ -102,6 +102,7 @@
 
       @when active {
         color: var(--color-primary);
+        font-weight: 500;
       }
 
       &:hover {
@@ -150,7 +151,8 @@
         &.is-active {
           border: 1px solid var(--color-base-gray);
           border-bottom-color: var(--color-white);
-          border-radius: 4px 4px 0 0;
+          border-radius: 2px 2px 0 0;
+          font-weight: 500;
 
           &.is-closable {
             padding: * 16px;
