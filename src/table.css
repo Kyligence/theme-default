@@ -7,7 +7,6 @@
 
   @b table {
     position: relative;
-    overflow: hidden;
     box-sizing: border-box;
     width: 100%;
     max-width: 100%;
@@ -279,7 +278,7 @@
     }
 
     @e body-wrapper {
-      overflow: auto;
+      overflow: visible;
       position: relative;
     }
 
@@ -374,7 +373,6 @@
 
     & .cell {
       box-sizing: border-box;
-      overflow: hidden;
       text-overflow: ellipsis;
       white-space: normal;
       word-break: break-all;
