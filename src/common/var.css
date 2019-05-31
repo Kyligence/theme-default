@@ -56,7 +56,7 @@
   --border-width-base: 1px;
   --border-style-base: solid;
   --border-color-base: #CCCCCC;
-  --border-color-hover: var(--color-base-silver);
+  --border-color-hover: #B2B2B2;
   --border-base: var(--border-width-base) var(--border-style-base) var(--border-color-base);
   --border-radius-base: 2px;
   --border-radius-small: 2px;
@@ -278,8 +278,8 @@
   --input-fill: var(--color-white);
   --input-fill-disabled: var(--disabled-fill-base);
   --input-color-disabled: var(--font-color-disabled-base);
-  --input-icon-color: var(--color-extra-light-silver);
-  --input-placeholder-color: var(--color-light-silver);
+  --input-icon-color: #B2B2B2;
+  --input-placeholder-color: #B2B2B2;
   --input-max-width: 314px;
 
   --input-hover-border: var(--border-color-hover);
@@ -539,9 +539,17 @@
 
   /* Steps
   --------------------------*/
-  --steps-border-color: var(--disabled-border-base);
-  --steps-border-radius: 4px;
-  --steps-padding: 20px;
+  --steps-border-width: 2px;
+  --steps-icon-height: 26px;
+  --steps-line-color: var(--border-color-base);
+
+  --steps-process-color: var(--color-primary);
+  --steps-process-background: var(--color-white);
+  --steps-process-border-color: var(--color-primary);
+
+  --steps-wait-color: #B2B2B2;
+  --steps-wait-background: var(--color-white);
+  --steps-wait-border-color: var(--border-color-base);
 
   /* Menu
   --------------------------*/
@@ -609,7 +617,7 @@
   --collapse-header-fill: var(--color-white);
   --collapse-header-color: var(--color-extra-light-black);
   --collapse-header-size: 13px;
-  --collapse-content-fill: var(--color-dark-white);
+  --collapse-content-fill: var(--color-white);
   --collapse-content-size: 13px;
   --collapse-content-color: var(--color-base-black);
 
