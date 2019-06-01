@@ -15,6 +15,10 @@
       margin-left: 15px;
     }
 
+    .el-radio__label.is-checked-label {
+      color: var(--color-primary);
+    }
+
     @e input {
       white-space: nowrap;
       cursor: pointer;

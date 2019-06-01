@@ -11,6 +11,10 @@
     white-space: nowrap;
     @utils-user-select none;
 
+    .el-checkbox__label.is-checked-label {
+      color: var(--color-primary);
+    }
+
     @e input {
       white-space: nowrap;
       cursor: pointer;
