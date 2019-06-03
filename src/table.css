@@ -278,7 +278,7 @@
     }
 
     @e body-wrapper {
-      overflow: visible;
+      overflow: auto;
       position: relative;
     }
 
