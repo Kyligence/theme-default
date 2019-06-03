@@ -520,7 +520,7 @@
   --------------------------*/
   --card-border-color: var(--border-color-base);
   --card-border-radius: 2px;
-  --card-default-header-color: #ffffff;
+  --card-default-header-color: #F4F4F4;
   --card-primary-header-color: #CDE7F8;
 
   /* Slider
