@@ -39,7 +39,8 @@
     margin-bottom: 15px;
     @utils-clearfix;
 
-    & .el-form-item {
+    & .el-form-item,
+    & .el-form-item.is-error {
       margin-bottom: 0;
     }
 
@@ -79,6 +80,7 @@
     }
 
     @when error {
+      margin-bottom: 25px;
       & .el-input__inner,
       & .el-textarea__inner {
         border-color: var(--color-danger);
