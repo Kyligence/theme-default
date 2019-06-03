@@ -518,9 +518,10 @@
 
   /* Card
   --------------------------*/
-  --card-border-color: var(--disabled-border-base);
-  --card-border-radius: 4px;
-  --card-padding: 20px;
+  --card-border-color: var(--border-color-base);
+  --card-border-radius: 2px;
+  --card-default-header-color: #ffffff;
+  --card-primary-header-color: #CDE7F8;
 
   /* Slider
   --------------------------*/
