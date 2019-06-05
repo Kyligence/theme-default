@@ -99,74 +99,59 @@
           border-width: var(--steps-border-width);
           border-style: solid;
           border-radius: 50%;
-
-          @when process {
-            color: var(--steps-process-color);
-            background-color: var(--steps-process-background);
-            border-color: var(--steps-process-border-color);
-          }
-  
-          @when wait {
-            color: var(--steps-wait-color);
-            background-color: var(--steps-wait-background);
-            border-color: var(--steps-wait-border-color);
-          }
-  
-          @when success {
-            color: var(--color-white);
-            background-color: var(--color-success);
-            border-color: var(--color-success);
-          }
-  
-          @when error {
-            color: var(--color-white);
-            background-color: var(--color-danger);
-            border-color: var(--color-danger);
-          }
-  
-          @when finish {
-            color: var(--color-white);
-            background-color: var(--color-primary);
-            border-color: var(--color-primary);
-          }
         }
       }
 
       @when process {
-        color: var(--steps-process-color);
-        border-color: var(--steps-process-border-color);
+        .el-step__icon {
+          color: var(--steps-process-color);
+          background-color: var(--steps-process-background);
+          border-color: var(--steps-process-border-color);
+        }
         .el-step__line-inner {
           background-color: var(--steps-process-color);
         }
       }
 
       @when wait {
-        color: var(--steps-wait-color);
-        border-color: var(--steps-wait-border-color);
+        .el-step__icon {
+          color: var(--steps-wait-color);
+          background-color: var(--steps-wait-background);
+          border-color: var(--steps-wait-border-color);
+        }
         .el-step__line-inner {
           background-color: var(--steps-wait-border-color);
         }
       }
 
       @when success {
-        color: var(--color-success);
-        border-color: var(--color-success);
+        .el-step__icon {
+          color: var(--color-white);
+          background-color: var(--color-success);
+          border-color: var(--color-success);
+        }
         .el-step__line-inner {
           background-color: var(--color-success);
         }
       }
 
       @when error {
-        color: var(--color-danger);
-        border-color: var(--color-danger);
+        .el-step__icon {
+          color: var(--color-white);
+          background-color: var(--color-danger);
+          border-color: var(--color-danger);
+        }
         .el-step__line-inner {
           background-color: var(--color-danger);
         }
       }
 
       @when finish {
-        color: var(--color-primary);
-        border-color: var(--color-primary);
+        .el-step__icon {
+          color: var(--color-white);
+          background-color: var(--color-primary);
+          border-color: var(--color-primary);
+        }
         .el-step__line-inner {
           background-color: var(--color-primary);
         }
