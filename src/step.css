@@ -88,7 +88,6 @@
       font-size: var(--steps-icon-height);
       vertical-align: top;
       transition: all 150ms;
-      box-sizing: content-box;
 
       @when text {
         font-size: 14px;
@@ -99,6 +98,7 @@
           border-width: var(--steps-border-width);
           border-style: solid;
           border-radius: 50%;
+          box-sizing: content-box;
         }
       }
 
