@@ -99,6 +99,7 @@
           border-width: var(--steps-border-width);
           border-style: solid;
           border-radius: 50%;
+          border-color: var(--steps-line-color);
 
           @when process {
             color: var(--steps-process-color);
