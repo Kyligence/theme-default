@@ -189,6 +189,57 @@
       @when active {
         z-index: 1;
       }
+
+      @when plain {
+        &.el-button--primary {
+          &:first-child {
+            border-right-color: var(--color-primary);
+          }
+          &:last-child {
+            border-left-color: var(--color-primary);
+          }
+          &:not(:first-child):not(:last-child) {
+            border-left-color: var(--color-primary);
+            border-right-color: var(--color-primary);
+          }
+        }
+        &.el-button--success {
+          &:first-child {
+            border-right-color: var(--color-success);
+          }
+          &:last-child {
+            border-left-color: var(--color-success);
+          }
+          &:not(:first-child):not(:last-child) {
+            border-left-color: var(--color-success);
+            border-right-color: var(--color-success);
+          }
+        }
+        &.el-button--warning {
+          &:first-child {
+            border-right-color: var(--color-warning);
+          }
+          &:last-child {
+            border-left-color: var(--color-warning);
+          }
+          &:not(:first-child):not(:last-child) {
+            border-left-color: var(--color-warning);
+            border-right-color: var(--color-warning);
+          }
+        }
+        &.el-button--danger {
+          &:first-child {
+            border-right-color: var(--color-danger);
+          }
+          &:last-child {
+            border-left-color: var(--color-danger);
+          }
+          &:not(:first-child):not(:last-child) {
+            border-left-color: var(--color-danger);
+            border-right-color: var(--color-danger);
+          }
+        }
+      }
     }
 
     @each $type in (primary, success, warning, danger, info) {
