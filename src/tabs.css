@@ -102,7 +102,7 @@
 
       @when active {
         color: var(--color-primary);
-        font-weight: 500;
+        font-weight: var(--font-weight-medium);
       }
 
       &:hover {
@@ -152,7 +152,7 @@
           border: 1px solid var(--color-base-gray);
           border-bottom-color: var(--color-white);
           border-radius: 2px 2px 0 0;
-          font-weight: 500;
+          font-weight: var(--font-weight-medium);
 
           &.is-closable {
             padding: * 16px;

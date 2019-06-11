@@ -31,8 +31,7 @@
       }
 
       &.selected {
-        color: var(--color-white);
-        background-color: var(--select-option-selected);
+        color: var(--color-primary);
 
         &.hover {
           background-color: var(--select-option-selected-hover);

@@ -91,7 +91,7 @@
 
       @when text {
         font-size: 14px;
-        font-weight: 500;
+        font-weight: var(--font-weight-medium);
         .el-step__icon {
           width: 26px;
           height: 26px;

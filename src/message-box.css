@@ -89,7 +89,7 @@
       padding-left: 0;
       margin-bottom: 0;
       font-size: var(--msgbox-font-size);
-      font-weight: 500;
+      font-weight: var(--font-weight-medium);
       height: 18px;
       color: var(--color-base-black);
     }

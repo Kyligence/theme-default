@@ -48,7 +48,7 @@
 
   /* Link
   -------------------------- */
-  --link-color: var(--color-extra-light-black);
+  --link-color: var(--font-color-grey);
   --link-hover-color: var(--color-primary);
 
   /* Border
@@ -77,6 +77,7 @@
   --font-color-base: var(--color-base-black);
   --font-color-grey: #191919;
   --font-color-disabled-base: #bbb;
+  --font-weight-medium: 700;
 
   /* Size
   -------------------------- */
@@ -90,9 +91,9 @@
 
   /* Disable base
   -------------------------- */
-  --disabled-fill-base: var(--color-extra-light-gray);
-  --disabled-color-base: #bbb;
-  --disabled-border-base: var(--color-base-gray);
+  --disabled-fill-base: #f4f4f4;
+  --disabled-color-base: #7f7f7f;
+  --disabled-border-base: #cccccc;
 
   /* Icon
   -------------------------- */
@@ -169,7 +170,7 @@
   --select-font-size: var(--font-size-base);
   --select-close-hover-color: var(--color-light-silver);
 
-  --select-input-color: var(--color-extra-light-silver);
+  --select-input-color: var(--border-color-base);
   --select-multiple-input-color: #666;
   --select-input-focus-background: var(--color-primary);
   --select-input-font-size: 12px;
@@ -182,9 +183,9 @@
   --select-option-disabled-color: var(--color-extra-light-silver);
   --select-option-disabled-background: var(--color-white);
   --select-option-height: 36px;
-  --select-option-hover-background: var(--color-light-gray);
+  --select-option-hover-background: #e6f3fb;
   --select-option-selected: var(--color-primary);
-  --select-option-selected-hover: shade(var(--color-primary), 0.12);
+  --select-option-selected-hover: var(--select-option-hover-background);
 
   --select-group-color: #999;
   --select-group-height: 30px;
@@ -268,7 +269,7 @@
   /* Input
   -------------------------- */
   --input-font-size: var(--font-size-base);
-  --input-color: var(--font-color-base);
+  --input-color: #263238;
   --input-width: 140px;
   --input-height: 30px;
   --input-border: var(--border-base);
@@ -290,7 +291,7 @@
   --input-disabled-fill: var(--disabled-fill-base);
   --input-disabled-border: var(--disabled-border-base);
   --input-disabled-color: var(--disabled-color-base);
-  --input-disabled-placeholder-color: var(--color-extra-light-silver);
+  --input-disabled-placeholder-color: #b2b2b2;
 
   --input-large-font-size: 16px;
   --input-large-height: 42px;
@@ -441,10 +442,9 @@
   /* Pagination
  -------------------------- */
   --pagination-font-size: 12px;
-  --pagination-font-weight: 500;
+  --pagination-font-weight: var(--font-weight-medium);
   --pagination-fill: var(--color-white);
-  /* --pagination-color: var(--link-color); */
-  --pagination-color: var(--font-color-grey);
+  --pagination-color: var(--link-color);
   --pagination-border-radius: 2px;
   --pagination-button-color: var(--color-light-silver);
   --pagination-button-size: 24px;
