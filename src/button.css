@@ -86,9 +86,9 @@
         &,
         &:hover,
         &:focus {
-          background-color: var(--color-white);
-          border-color: var(--color-base-gray);
-          color: var(--color-extra-light-silver);
+          color: var(--button-disabled-color);
+          background-color: var(--button-disabled-fill);
+          border-color: var(--button-disabled-border);
         }
       }
     }
