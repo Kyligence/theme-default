@@ -6,7 +6,7 @@
   @b dropdown {
     display: inline-block;
     position: relative;
-    color: var(--color-extra-light-black);
+    color: var(--font-color-grey);
     font-size: var(--font-size-base);
 
     .el-button-group {
