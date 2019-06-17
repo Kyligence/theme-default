@@ -28,8 +28,11 @@
     &:focus {
       color: var(--color-primary);
       border-color: @color;
+      &:not(.el-button--text) {
+        background: var(--color-light-blue);
+      }
     }
-    
+
     &:active {
       color: shade(var(--color-primary), var(--button-active-shade-percent));
       border-color: @color;
