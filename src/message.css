@@ -33,7 +33,7 @@
         font-size: var(--message-content-font-size);
         margin: 0 34px 0 0;
         white-space: nowrap;
-        color: var(--font-color-grey);
+        color: var(--color-base-black);
         text-align: justify;
       }
       

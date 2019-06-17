@@ -32,23 +32,26 @@
   --color-white: #fff;
   --color-dark-white: color(var(--color-white) blend(var(--color-primary) 2%));
   --color-black: #000;
+  --color-base-black: #191919;
+  --color-base-grey: #323232;
+  --color-light-blue: #e6f3fb;
 
-  --color-base-black: color(var(--color-primary) h(+6) s(33%) l(18%));
-  /* --color-light-black: color(var(--color-base-black) h(+5) s(27%) l(27%)); */
+  --color-base-dark: color(var(--color-primary) h(+6) s(33%) l(18%));
+  /* --color-light-black: color(var(--color-base-dark) h(+5) s(27%) l(27%)); */
   --color-light-black: #102d41;
-  --color-extra-light-black: color(var(--color-base-black) h(+2) s(19%) l(35%));
+  --color-extra-light-black: color(var(--color-base-dark) h(+2) s(19%) l(35%));
 
-  --color-base-silver: color(var(--color-base-black) h(+3) s(16%) l(58%));
-  --color-light-silver: color(var(--color-base-black) h(+3) s(23%) l(67%));
-  --color-extra-light-silver: color(var(--color-base-black) s(26%) l(80%));
+  --color-base-silver: color(var(--color-base-dark) h(+3) s(16%) l(58%));
+  --color-light-silver: color(var(--color-base-dark) h(+3) s(23%) l(67%));
+  --color-extra-light-silver: color(var(--color-base-dark) s(26%) l(80%));
 
-  --color-base-gray: color(var(--color-base-black) s(28%) l(86%));
-  --color-light-gray: color(var(--color-base-black) h(+10) s(33%) l(92%));
-  --color-extra-light-gray: color(var(--color-base-black) h(+6) s(33%) l(95%));
+  --color-base-gray: color(var(--color-base-dark) s(28%) l(86%));
+  --color-light-gray: color(var(--color-base-dark) h(+10) s(33%) l(92%));
+  --color-extra-light-gray: color(var(--color-base-dark) h(+6) s(33%) l(95%));
 
   /* Link
   -------------------------- */
-  --link-color: var(--font-color-grey);
+  --link-color: var(--color-base-black);
   --link-hover-color: var(--color-primary);
 
   /* Border
@@ -74,8 +77,7 @@
   /* Font
   -------------------------- */
   --font-size-base: 14px;
-  --font-color-base: var(--color-base-black);
-  --font-color-grey: #191919;
+  --font-color-base: var(--color-base-dark);
   --font-color-disabled-base: #bbb;
   --font-weight-medium: 700;
 
@@ -183,8 +185,8 @@
   --select-option-disabled-color: var(--color-extra-light-silver);
   --select-option-disabled-background: var(--color-white);
   --select-option-height: 36px;
-  --select-option-hover-background: #e6f3fb;
-  --select-option-selected: var(--color-primary);
+  --select-option-hover-background: var(--color-light-blue);
+  --select-option-selected: var(--color-white);
   --select-option-selected-hover: var(--select-option-hover-background);
 
   --select-group-color: #999;
@@ -208,7 +210,7 @@
   --alert-close-font-size: 12px;
   --alert-close-customed-font-size: 13px;
 
-  --alert-text-color: var(--font-color-grey);
+  --alert-text-color: var(--color-base-black);
   --alert-notice-color: var(--color-info-background);
   --alert-success-color: var(--color-success-background);
   --alert-info-color: var(--color-normal-background);
@@ -256,7 +258,7 @@
   --notification-font-size: var(--font-size-base);
   --notification-color: var(--border-color-hover);
   --notification-title-font-size: 16px;
-  --notification-title-color: var(--color-base-black);
+  --notification-title-color: var(--color-base-dark);
 
   --notification-close-color: var(--color-extra-light-silver);
   --notification-close-hover-color: var(--color-light-silver);
@@ -269,7 +271,7 @@
   /* Input
   -------------------------- */
   --input-font-size: var(--font-size-base);
-  --input-color: #263238;
+  --input-color: var(--color-base-black);
   --input-width: 140px;
   --input-height: 30px;
   --input-border: var(--border-base);
@@ -433,7 +435,7 @@
   /* Table
  -------------------------- */
   --table-border-color: var(--border-color-base);
-  --table-text-color: var(--font-color-grey);
+  --table-text-color: var(--color-base-black);
   --table-header-text-color: #323232;
   --table-header-background: #CDE7F8;
   --table-row-hover-background: #E6F3FB;
@@ -462,14 +464,14 @@
   --popover-arrow-size: 6px;
   --popover-padding: 10px;
   --popover-title-font-size: 13px;
-  --popover-title-color: var(--color-base-black);
+  --popover-title-color: var(--color-base-dark);
 
   /* Tooltip
   -------------------------- */
-  --tooltip-fill: var(--color-base-black);
+  --tooltip-fill: var(--color-base-dark);
   --tooltip-color: var(--color-white);
   --tooltip-font-size: 12px;
-  --tooltip-border-color: var(--color-base-black);
+  --tooltip-border-color: var(--color-base-dark);
   --tooltip-arrow-size: 6px;
   --tooltip-padding: 10px;
 
@@ -620,7 +622,7 @@
   --collapse-header-size: 13px;
   --collapse-content-fill: var(--color-white);
   --collapse-content-size: 13px;
-  --collapse-content-color: var(--color-base-black);
+  --collapse-content-color: var(--color-base-dark);
 
   /* Transfer
   --------------------------*/

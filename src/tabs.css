@@ -106,7 +106,7 @@
       }
 
       &:hover {
-        color: var(--color-base-black);
+        color: var(--color-base-dark);
         cursor: pointer;
       }
 

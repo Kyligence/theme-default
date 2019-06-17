@@ -41,7 +41,7 @@
     }
 
     @e item {
-      color: var( --font-color-grey);
+      color: var( --color-base-black);
       height: 32px;
       line-height: 32px;
       font-size: 12px;
@@ -52,7 +52,7 @@
       }
 
       &.active:not(.disabled) {
-        color: var( --font-color-grey);
+        color: var( --color-base-black);
         font-weight: var(--font-weight-medium);
       }
 

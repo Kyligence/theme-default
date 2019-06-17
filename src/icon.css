@@ -113,7 +113,9 @@
 .el-kylin-filter:before {
   content: "\e900";
 }
-.el-kylin-more:before {
+.el-kylin-more_right:before {
   content: "\e901";
 }
-
+.el-kylin-more:before {
+  content: "\e902";
+}

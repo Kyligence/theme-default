@@ -43,7 +43,7 @@
       }
       
       & .el-submenu .el-menu {
-        background-color: var(--color-base-black);
+        background-color: var(--color-base-dark);
 
         & .el-menu-item:hover {
           background-color: var(--color-extra-light-black);
