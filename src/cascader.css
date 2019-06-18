@@ -145,7 +145,7 @@
 
       @when active {
         color: var(--color-primary);
-        background-color: var(--select-option-selected);
+        background-color: var(--select-dropdown-background);
 
         &:hover {
           background-color: var(--select-option-selected-hover);
@@ -158,7 +158,7 @@
 
       &.selected {
         color: var(--color-white);
-        background-color: var(--select-option-selected);
+        background-color: var(--select-dropdown-background);
 
         &.hover {
           background-color: var(--select-option-selected-hover);
