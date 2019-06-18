@@ -58,6 +58,7 @@
       .el-dialog__close {
         color: var(--dialog-close-color);
         font-size: 12px;
+        vertical-align: middle;
       }
       
       &:focus, &:hover {

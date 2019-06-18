@@ -427,7 +427,7 @@
   --dialog-tiny-width: 480px;
   --dialog-small-width: 720px;
   --dialog-large-width: 960px;
-  --dialog-close-color: var(--color-extra-light-silver);
+  --dialog-close-color: #B2B2B2;
   --dialog-close-hover-color: var(--color-primary);
   --dialog-title-font-size: 16px;
   --dialog-font-size: 14px;
