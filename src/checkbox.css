@@ -49,6 +49,16 @@
             }
           }
         }
+        &.has-selection {
+          .el-checkbox__inner {
+            background-color: var(--checkbox-disabled-checked-input-fill);
+            border-color: var(--checkbox-disabled-checked-input-border-color);
+
+            &::after {
+              border-color: var(--checkbox-disabled-checked-icon-color);
+            }
+          }
+        }
         &.is-indeterminate {
           .el-checkbox__inner {
             background-color: var(--checkbox-disabled-checked-input-fill);
@@ -128,8 +138,6 @@
         top: 1px;
         transform: rotate(45deg) scaleY(0);
         width: 4px;
-        transition: transform .15s cubic-bezier(.71,-.46,.88,.6) .05s;
-        transform-origin: center;
       }
     }
 
@@ -145,6 +153,28 @@
     @e label {
       font-size: var(--checkbox-font-size);
       padding-left: 5px;
+    }
+
+    .has-selection {
+      .el-checkbox__inner {
+        background-color: var(--checkbox-checked-input-fill);
+        border-color: var(--checkbox-checked-input-border-color);
+      }
+      .el-checkbox__inner::after {
+        content: "";
+        position: absolute;
+        display: block;
+        background-color: #fff;
+        width: 14px;
+        height: 2px;
+        -ms-transform: scale(.5);
+        transform: scale(.5);
+        right: 0;
+        top: 5px;
+        border-left: 0;
+        border-top: 0;
+        left: 0px;
+      }
     }
 
     & + .el-checkbox {
