@@ -8,6 +8,10 @@
 
     &.el-input {
       width: 193px;
+
+      input {
+        line-height: 30px;
+      }
     }
 
     @m daterange {
@@ -30,6 +34,24 @@
       background: var(--color-white);
       z-index: 10;
       top: 41px;
+    }
+    .hidden {
+      display: none;
+    }
+    .el-input__icon.el-icon-close {
+      font-size: 5px;
+      padding: 3px;
+      margin-top: 9px;
+      color: #FFF;
+      overflow: hidden;
+      border-radius: 50%;
+      background: #cccccc;
+      width: 6px;
+      height: 6px;
+      line-height: 5px;
+    }
+    .el-kylin-type_date {
+      line-height: 30px;
     }
   }
 }
