@@ -77,7 +77,6 @@
 
     @e body {
       padding: 20px 20px;
-      color: var(--color-extra-light-black);
       font-size: var(--dialog-font-size);
     }
 
