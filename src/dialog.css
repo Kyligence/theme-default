@@ -70,7 +70,6 @@
     }
 
     @e title {
-      line-height: 1;
       font-size: var(--dialog-title-font-size);
       font-weight: var(--font-weight-medium);
       color: var(--color-base-black);
