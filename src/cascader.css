@@ -121,15 +121,13 @@
       }
       
       @m extensible {
-        &:after {
-          font-family: 'el-kylin';
-          content: "\e901";
+        > i {
           font-size: 12px;
           transform: scale(0.8);
           color: rgb(191, 203, 217);
           position: absolute;
           right: 10px;
-          margin-top: 1px;
+          line-height: 20px;
         }
       }
 
