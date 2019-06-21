@@ -68,7 +68,7 @@
         margin-left: 0;
       }
 
-      &:hover {
+      &:hover:not(.is-disabled) {
         background: var(--transfer-item-hover-background);
       }
 
