@@ -68,10 +68,6 @@
         margin-left: 0;
       }
 
-      &.el-checkbox {
-        color: var(--color-extra-light-black);
-      }
-
       &:hover {
         background: var(--transfer-item-hover-background);
       }
@@ -131,6 +127,7 @@
       border-bottom: 1px solid var(--transfer-border-color);
       box-sizing: border-box;
       color: var(--color-base-black);
+      font-weight: var(--font-weight-medium);
     }
 
     .el-transfer-panel__footer {

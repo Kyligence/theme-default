@@ -634,6 +634,6 @@
   --transfer-panel-footer-height: 36px;
   --transfer-panel-body-height: 246px;
   --transfer-item-height: 30px;
-  --transfer-item-hover-background: var(--color-light-gray);
+  --transfer-item-hover-background: var(--color-light-blue);
   --transfer-filter-height: 24px;
 }
