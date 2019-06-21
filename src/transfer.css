@@ -105,15 +105,16 @@
       box-sizing: border-box;
       border-bottom: 1px solid var(--transfer-border-color);
 
-      .el-input__inner {
+      &.el-input .el-input__inner {
         height: var(--transfer-filter-height);
         width: 100%;
         display: inline-block;
         box-sizing: border-box;
+        padding-left: 25px;
       }
 
-      .el-input__suffix.el-input__icon {
-        right: 20px;
+      .el-input__prefix.el-input__icon {
+        left: 20px;
       }
 
       .el-icon-circle-close {
@@ -157,6 +158,7 @@
       line-height: var(--transfer-item-height);
       padding: 6px 20px 0;
       color: var(--color-base-silver);
+      text-align: center;
     }
 
 
