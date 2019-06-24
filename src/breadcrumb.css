@@ -10,7 +10,7 @@
 
     @e separator {
       margin: 0 8px;
-      color: var(--color-extra-light-silver);
+      color: var(--disabled-color-base);
     }
     @e item {
       float: left;
