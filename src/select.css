@@ -22,6 +22,12 @@
       }
     }
 
+    @when open {
+      .el-input__inner {
+        border-color: var(--color-primary);
+      }
+    }
+
     & .el-input__inner {
       cursor: pointer;
       padding-right: 35px;
