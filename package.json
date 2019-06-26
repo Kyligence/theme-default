@@ -1,6 +1,6 @@
 {
   "name": "kyligence-theme-default",
-  "version": "0.0.50",
+  "version": "0.0.51",
   "description": "Kyligence component default theme.",
   "main": "lib/index.css",
   "style": "lib/index.css",

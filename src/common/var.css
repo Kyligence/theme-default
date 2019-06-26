@@ -34,6 +34,7 @@
   --color-black: #000;
   --color-base-black: #191919;
   --color-base-grey: #323232;
+  --color-light-grey: #7F7F7F;
   --color-light-blue: #e6f3fb;
 
   --color-base-dark: color(var(--color-primary) h(+6) s(33%) l(18%));

@@ -145,7 +145,7 @@
 
       .el-checkbox {
         padding-left: 10px;
-        color: var(--color-base-silver);
+        color: var(--color-light-grey);
       }
     }
 
@@ -154,7 +154,7 @@
       height: var(--transfer-item-height);
       line-height: var(--transfer-item-height);
       padding: 6px 20px 0;
-      color: var(--color-base-silver);
+      color: var(--color-light-grey);
       text-align: center;
     }
 
