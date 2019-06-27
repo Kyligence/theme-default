@@ -18,8 +18,7 @@
       @e inner {
         &, & a {
           transition: color .15s linear;
-          color:var(--color-base-black);
-
+          color: var(--disabled-color-base);
           &:hover {
             color: var(--color-primary);
             cursor: pointer;
@@ -31,7 +30,7 @@
         .el-breadcrumb__item__inner,
         .el-breadcrumb__item__inner a {
           &, &:hover {
-            color: var(--disabled-color-base);
+            color: var(--color-base-black);
             cursor: text;
           }
         }
