@@ -367,7 +367,7 @@
       padding-right: 10px;
     }
 
-    & tr input[type="checkbox"] {
+    & tr input[type="checkbox"],  & tr input[type="radio"]{
       margin: 0;
     }
 
