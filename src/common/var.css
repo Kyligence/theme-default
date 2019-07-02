@@ -4,8 +4,9 @@
   -------------------------- */
   --all-transition: all .3s cubic-bezier(.645,.045,.355,1);
   --fade-transition: opacity 300ms cubic-bezier(0.23, 1, 0.32, 1);
-  --fade-linear-transition: opacity 200ms linear;
-  --md-fade-transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms, opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms;
+  --fade-linear-transition: opacity .2s linear;
+  --dialog-fade-transition: opacity .2s ease, transform .2s ease;
+  --md-fade-transition: transform .3s cubic-bezier(0.23, 1, 0.32, 1) .1s, opacity .3s cubic-bezier(0.23, 1, 0.32, 1) .1s;
   --border-transition-base: border-color .2s cubic-bezier(.645,.045,.355,1);
   --color-transition-base: color .2s cubic-bezier(.645,.045,.355,1);
 

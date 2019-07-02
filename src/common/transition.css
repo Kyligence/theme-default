@@ -1,58 +1,84 @@
 @charset "UTF-8";
 @import './var.css';
 
-
-/* DEPRECATED */
+/* Tooltip / Dialog Modal / Popover Animation */
 .fade-in-linear-enter-active,
 .fade-in-linear-leave-active {
   transition: var(--fade-linear-transition);
 }
-.fade-in-linear-enter,
 .fade-in-linear-leave,
+.fade-in-linear-enter-active {
+  opacity: 1;
+}
+.fade-in-linear-enter,
 .fade-in-linear-leave-active {
   opacity: 0;
 }
 
-.el-fade-in-linear-enter-active,
-.el-fade-in-linear-leave-active {
-  transition: var(--fade-linear-transition);
+/* Dialog Animation */
+.dialog-fade-enter-active,
+.dialog-fade-leave-active {
+  transition: var(--dialog-fade-transition);
 }
-.el-fade-in-linear-enter,
-.el-fade-in-linear-leave,
-.el-fade-in-linear-leave-active {
+.dialog-fade-leave,
+.dialog-fade-enter-active {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+.dialog-fade-enter,
+.dialog-fade-leave-active {
+  transform: translate3d(0, -20px, 0);
   opacity: 0;
 }
 
-.el-fade-in-enter-active,
-.el-fade-in-leave-active {
-  transition: all .3s cubic-bezier(.55,0,.1,1);
+/* Message Animation */
+.el-message.el-message-fade-enter-active,
+.el-message.el-message-fade-leave-active {
+  transition: opacity .3s, transform .4s;
 }
-.el-fade-in-enter,
-.el-fade-in-leave-active {
+.el-message.el-message-fade-enter,
+.el-message.el-message-fade-leave-active {
   opacity: 0;
+  transform: translate(-50%, -100%);
+}
+.el-message.el-message-fade-leave,
+.el-message.el-message-fade-enter-active {
+  opacity: 1;
+  transform: translate(-50%, 0);
 }
 
+/* Tag Animation */
 .el-zoom-in-center-enter-active,
 .el-zoom-in-center-leave-active {
-  transition: all .3s cubic-bezier(.55,0,.1,1);
+  transition: transform .3s cubic-bezier(.55,0,.1,1), opacity .3s cubic-bezier(.55,0,.1,1);
+}
+.el-zoom-in-center-leave,
+.el-zoom-in-center-enter-active {
+  transform: scaleX(1);
+  opacity: 1;
 }
 .el-zoom-in-center-enter,
 .el-zoom-in-center-leave-active {
-  opacity: 0;
   transform: scaleX(0);
+  opacity: 0;
 }
 
+/* Suggestion / Menu / PickerDrop / Dropdown / FormItem / SubMenu / Select / FilterPannel Animation */
 .el-zoom-in-top-enter-active,
 .el-zoom-in-top-leave-active {
-  opacity: 1;
-  transform: scaleY(1);
   transition: var(--md-fade-transition);
+}
+.el-zoom-in-top-leave,
+.el-zoom-in-top-enter-active {
+  transform: scaleY(1);
+  opacity: 1;
   transform-origin: center top;
 }
 .el-zoom-in-top-enter,
 .el-zoom-in-top-leave-active {
-  opacity: 0;
   transform: scaleY(0);
+  opacity: 0;
+  transform-origin: center top;
 }
 
 .el-zoom-in-bottom-enter-active,
@@ -60,12 +86,18 @@
   opacity: 1;
   transform: scaleY(1);
   transition: var(--md-fade-transition);
+}
+.el-zoom-in-bottom-leave,
+.el-zoom-in-bottom-enter-active {
+  transform: scaleY(1);
+  opacity: 1;
   transform-origin: center bottom;
 }
 .el-zoom-in-bottom-enter,
 .el-zoom-in-bottom-leave-active {
-  opacity: 0;
   transform: scaleY(0);
+  opacity: 0;
+  transform-origin: center bottom;
 }
 
 .el-zoom-in-left-enter-active,
